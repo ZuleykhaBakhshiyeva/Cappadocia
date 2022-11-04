@@ -368,13 +368,15 @@ footer{
             width: 356px;
             height: 527px;
             background-image: url(./photo/kisspng-flight-hot-air-balloon-computer-icons-aerostat-5afe08ad4b2f92\ 2.png);
+            background-size: cover;
+            background-repeat: no-repeat;
             .footer-contacts-title{
                 margin-top: 70px;
                 text-align: center;
                 font-family: "Balqis";
                 font-weight: 400;
                 line-height: 115px;
-                font-size: 86px;
+                font-size: 93px;
                 color: #E2AB3F;
             }
             .footer-phone{
@@ -407,6 +409,204 @@ footer{
             font-weight: 400;
             line-height: 115px;
             font-size: 86px;
+        }
+    }
+}
+@media only screen and (max-width:769px) {
+    header,footer{
+        max-width: 768px;
+        max-height: 608px;
+    }
+    header{
+        .container{
+            .header-title{
+            font-size:150px;
+                span{
+                    margin-top:-120px;
+                    font-size:35px;
+                }
+            }
+        }
+    }
+    footer{
+        .container{
+            max-width: 768px;
+            .footer-inner{
+               .footer-contacts{
+                margin:80px 0 0 45px; 
+                max-height: 433px;
+                max-width: 292px;
+                .footer-phone{
+                    font-size: 15px;
+                    line-height: 0;
+                }
+                .footer-mail{
+                    font-size: 15px;
+                    line-height: 0;
+                }
+                .footer-social-media{
+                    margin: 20px 0 0 85px;
+                }
+            } 
+            .footer-title{
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+
+
+    .fairy-tail{
+        margin-top: 100px;
+        .container{  
+            margin-left:90px;
+            .title{
+                font-size:65px;
+            }
+            span{
+                font-size:15px;
+                margin-left: 120px;
+                margin-top: -50px;
+            }
+        }
+        .left-right{
+            display: flex;
+            .left{
+                .image{
+                    height: 400px;
+                    width: 384px;
+                }
+            }
+            .right{
+                gap:5px;
+                margin-left:10px;
+                p{
+                   font-size: 13px; 
+                }
+            }
+        }
+        
+    }
+    .our-trip{
+        margin-top:50px;
+        .left-right{
+            .left{
+                margin-left:120px;
+                .container{
+                    .title{
+                        font-size:65px;
+                    }
+                    span{
+                        font-size:15px;
+                        margin-left:165px;
+                        margin-top:-49px;
+                    }
+                }
+                .text{
+                    margin-top:10px;
+                    font-size:15px;
+                    line-height: 13px;
+                }
+                button{
+                    margin-top:10px;
+                    width: 200px;
+                    font-size:20px;
+                }
+            }
+            .right{
+                margin-top:40px;
+                margin-left:20px;
+                img{
+                    width:400px ;
+                    height:510px;
+                }
+            }
+        }
+    }
+    .hotel{
+        margin-top: 100px;
+        .container{  
+            margin-left:90px;
+            .title{
+                font-size:65px;
+            }
+            span{
+                font-size:15px;
+                margin-left: 80px;
+                margin-top: -50px;
+            }
+        }
+        .left-right{
+            .left{
+                margin: 60px 0 0 0;
+                .image{
+                    height: 650px;
+                    width: 384px;
+                }
+            }
+            .right{
+                margin-top: 0;
+                .galery{
+                    margin-top: 0;
+                    width: 384px;
+                    height: 300px;
+                    .image{
+                        width: 190px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+    }
+    .price{
+        margin:200px 0 0 20px;
+        .left-right{
+            .right{
+                margin: 100px 0 0 20px;
+            }
+        }
+    }
+    .cтоимость{
+        margin: 150px 0 0 0;
+        .left-right{
+            .left{
+                .container-one{  
+                    margin-left:60px;
+                    .title{
+                        font-size:65px;
+                    }
+                    span{
+                        font-size:15px;
+                        margin-left: 120px;
+                        margin-top: -50px;
+                    }
+                }
+                .container-two{  
+                    margin-left:90px;
+                    .title{
+                        font-size:65px;
+                    }
+                    span{
+                        font-size:15px;
+                        margin-left: 60px;
+                        margin-top: -45px;
+                    }    
+                }
+                .text-one{
+                    margin-top:50px;
+                    p{
+                        font-size: 22px;
+                    }
+                }
+            }
+            .right{
+                margin-left: 10px;
+                .image{                
+                    width: 376px;
+                    height: 560px;
+                }
+            }
         }
     }
 }
