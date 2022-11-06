@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d6131543f.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
@@ -15,14 +16,11 @@
         <div class="container">
             <div class="navbar">
                 <nav>
-                    <a href="#" class="nav-link">Маршрут</a>
-                    <a href="#" class="nav-link">Отель</a>
-                    <a href="#" class="nav-link">Стоимость</a>
+                    <a href="#bus" class="nav-link">Маршрут</a>
+                    <a href="#hotel" class="nav-link">Отель</a>
+                    <a href="#price" class="nav-link">Стоимость</a>
                 </nav>
-                <div class="phone">
-                <img class="icon" src="./photo/Group.svg">
-                <a href="#" class="phone-link">+3845646556465</a>
-                </div>
+                <a href="+3845646556465" class="phone-link">+3845646556465</a>
             </div>
             <h5 class="header-title">Cappadocia
             <span>Эксклюзивный тур</span></h5>
@@ -37,7 +35,11 @@
             </div>
             <div class="left-right">
                 <div class="left">
-                    <img class="image" src="./photo/Rectangle 19.jpg">
+                    <div class="image">
+                        <img src="./photo/Rectangle 19.jpg" class="slider-img">
+                    </div>
+                    <button><i class="fa-solid fa-angle-left" onclick="prev()" style="font-size:60px ;"></i></button>
+                    <button1><i class="fa-solid fa-angle-right" onclick="next()" style="font-size: 60px;"></i></button1>
                 </div>
                 <div class="right">
                     <p>Каппадокия - сказочная страна воздушных шаров, сырных домиков,<br>разноцветных долин и волшебных рассветов!<br> 
@@ -56,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="our-trip">
+        <div class="our-trip" id="bus">
             <div class="left-right">
                 <div class="left">
                     <div class="container">
@@ -90,11 +92,15 @@
                     <button>ЗАБРОНИРОВАТЬ</button>
                 </div>
             <div class="right"> 
-                <img src="./photo/Rectangle 22.png"> 
+                <div class="image">
+                    <img src="./ourtrip/Rectangle 22.png" class="slider-img2"> 
+                </div>
+                <button2><i class="fa-solid fa-angle-left" onclick="prev1()" style="font-size:60px;"></i></button>
+                <button1><i class="fa-solid fa-angle-right" onclick="next1()" style="font-size: 60px;"></i></button1>
             </div> 
         </div> 
     </div> 
-    <div class="hotel"> 
+    <div class="hotel" id="hotel"> 
         <div class="container"> 
             <h1 class="title">Hotel</h1> 
             <span>Sultan Cave Suites</span>
@@ -114,15 +120,23 @@
                     </p> 
                 </div> 
                 <div class="galery"> 
-                    <img class="image" src="./photo/Rectangle 25.png"> 
-                    <img class="image" src="./photo/Rectangle 26.png"> 
-                    <img class="image" src="./photo/Rectangle 31.png"> 
-                    <img class="image" src="./photo/Rectangle 32.png"> 
+                    <a target="_blank" href="./photo/Rectangle 25 (1).png">
+                      <img class="image" src="./photo/Rectangle 25.png">   
+                    </a>
+                    <a target="_blank" href="./photo/Rectangle 26(1).png">
+                        <img class="image" src="./photo/Rectangle 26.png">
+                    </a>
+                    <a target="_blank" href="./photo/Rectangle 31(1).png">
+                        <img class="image" src="./photo/Rectangle 31.png"> 
+                    </a>
+                    <a target="_blank" href="./photo/Rectangle 32(1).png">
+                        <img class="image" src="./photo/Rectangle 32.png"> 
+                    </a>
                 </div> 
             </div> 
         </div> 
     </div>
-    <div class="price"> 
+    <div class="price" id="price"> 
         <div class="container"> 
             <h1 class="title">Price </h1>
             <span>Стоимость услуг</span> 
@@ -175,9 +189,9 @@
                     <p>Оставить заявку или задать вопрос</p>
                     <div class="input-text">
                         <input class="text" type="text" placeholder="Имя">
-                        <input class="text" type="text" placeholder="Телефон">
+                        <input class="text" type="tel" placeholder="Телефон" pattern="[0-9]{3}[0-9]{3}-[0-9]{2}-[0-9]{2}">
                     </div>
-                    <input class="button" type="button" value="ОСТАВИТЬ ЗАЯВКУ">
+                    <button class="btn button">ОСТАВИТЬ ЗАЯВКУ</button>
                 </div>
             </div>
             <div class="right">
@@ -192,17 +206,17 @@
             <div class="footer-contacts">
                 <div class="footer-contacts-title">Contacts</div>
                 <div class="footer-phone">
-                    <img src="./photo/phone 2.svg">
+                    <a href="tel:+38(066)555-777-6"><img src="./photo/phone 2.svg"></a>
                     <p>+38(066)555-777-6</p>
-                </div>   
+                </div>
                 <div class="footer-mail">
-                    <img src="./photo/mail 1.svg">
+                    <a href=mailto:"сappadocia.tours@gmail.com"><img src="./photo/mail 1.svg"></a>
                     <p>сappadocia.tours@gmail.com</p>
                 </div>  
                 <div class="footer-social-media">
-                    <img src="./photo/youtube 1.svg">
-                    <img src="./photo/facebook 1.svg">
-                    <img src="./photo/instagram 1.svg">
+                    <a href="http://www.youtube.com/"><img src="./photo/youtube 1.svg" ></a>
+                    <a href="http://www.facebook.com/"><img src="./photo/facebook 1.svg"></a>
+                    <a href="http://www.instagram.com/"><img src="./photo/instagram 1.svg"></a>
                 </div> 
             </div>
             <div class="footer-title">
@@ -211,6 +225,8 @@
         </div>
     </div>
 </footer>
-<script src="index.js"></script>
+<script src="fairytail.js"></script>
+<script src="ourtrip.js"></script>
+
 </body> 
 </html>
