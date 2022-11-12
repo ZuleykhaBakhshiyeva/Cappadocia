@@ -216,7 +216,6 @@ header{
                 padding: 0;
                 border: none;
                 cursor: pointer;
-                top: auto 0;
                 left: 635px;
             }
         }
@@ -505,6 +504,7 @@ footer{
             }
         }
     }
+    //footer
     footer{
         .container{
             max-width: 768px;
@@ -513,16 +513,28 @@ footer{
                 margin:80px 0 0 45px; 
                 max-height: 433px;
                 max-width: 292px;
+                .footer-contacts-title{
+                    margin-top: 55px;
+                    font-size: 80px;
+                }
                 .footer-phone{
                     font-size: 15px;
                     line-height: 0;
+                    margin-top: 0;
+                    p{
+                        margin:15px 0 0 5px;
+                    }
                 }
                 .footer-mail{
                     font-size: 15px;
                     line-height: 0;
+                    margin:0 0 0 40px;
+                    p{
+                        margin:15px 0 0 5px;
+                    }
                 }
                 .footer-social-media{
-                    margin: 20px 0 0 85px;
+                    margin: 20px 0 0 71px;
                 }
             } 
             .footer-title{
@@ -553,6 +565,13 @@ footer{
                 .image{
                     height: 400px;
                     width: 384px;
+                }
+                button{
+                    top:100px;
+                }
+                button1{
+                    top:100px;
+                    left:335px;
                 }
             }
             .right{
@@ -597,6 +616,12 @@ footer{
                 img{
                     width:400px ;
                     height:510px;
+                }
+                button2{
+                    top:250px;
+                }
+                button1{
+                    left:345px;
                 }
             }
         }

@@ -218,7 +218,6 @@ header {
   padding: 0;
   border: none;
   cursor: pointer;
-  top: auto 0;
   left: 635px;
 }
 
@@ -506,16 +505,28 @@ footer {
     max-height: 433px;
     max-width: 292px;
   }
+  footer .container .footer-inner .footer-contacts .footer-contacts-title {
+    margin-top: 55px;
+    font-size: 80px;
+  }
   footer .container .footer-inner .footer-contacts .footer-phone {
     font-size: 15px;
     line-height: 0;
+    margin-top: 0;
+  }
+  footer .container .footer-inner .footer-contacts .footer-phone p {
+    margin: 15px 0 0 5px;
   }
   footer .container .footer-inner .footer-contacts .footer-mail {
     font-size: 15px;
     line-height: 0;
+    margin: 0 0 0 40px;
+  }
+  footer .container .footer-inner .footer-contacts .footer-mail p {
+    margin: 15px 0 0 5px;
   }
   footer .container .footer-inner .footer-contacts .footer-social-media {
-    margin: 20px 0 0 85px;
+    margin: 20px 0 0 71px;
   }
   footer .container .footer-inner .footer-title {
     font-size: 48px;
@@ -540,6 +551,13 @@ footer {
   .fairy-tail .left-right .left .image {
     height: 400px;
     width: 384px;
+  }
+  .fairy-tail .left-right .left button {
+    top: 100px;
+  }
+  .fairy-tail .left-right .left button1 {
+    top: 100px;
+    left: 335px;
   }
   .fairy-tail .left-right .right {
     gap: 5px;
@@ -579,6 +597,12 @@ footer {
   .our-trip .left-right .right img {
     width: 400px;
     height: 510px;
+  }
+  .our-trip .left-right .right button2 {
+    top: 250px;
+  }
+  .our-trip .left-right .right button1 {
+    left: 345px;
   }
   .hotel {
     margin-top: 100px;
